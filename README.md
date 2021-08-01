@@ -53,3 +53,15 @@ Success example
 ```bash
 HTTP/1.1 204 No Content
 ```
+
+
+## Docker commands
+Build image
+```
+docker build -f Dockerfile -t go-test .
+```
+
+Run docker image
+```
+docker run -it -p 8000:8000 go-test:latest
+```

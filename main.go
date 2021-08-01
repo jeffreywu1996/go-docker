@@ -10,6 +10,7 @@ import (
 func main() {
 	// init mux router
 	// type inference :=
+	log.Println("Server started")
 	r := mux.NewRouter()
 	// Route handler / Endpoints
 	r.HandleFunc("/user/{user_id}", getUser).Methods("GET")
